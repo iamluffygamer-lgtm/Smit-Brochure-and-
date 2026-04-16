@@ -863,6 +863,19 @@ body { background: var(--paper); color: var(--ink); font-family: 'IBM Plex Mono'
   .metric { padding-right: 28px; margin-right: 28px; }
   .cover-h1 { font-size: 56px; }
 }
+  .proof-img {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid var(--rule);
+}
+
+.proof-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 </style>
 </head>
 <body>
@@ -1093,29 +1106,44 @@ body { background: var(--paper); color: var(--ink); font-family: 'IBM Plex Mono'
 
   <div class="proof-grid">
     <div class="proof-card">
-      <div class="proof-placeholder"><span>Screenshot Slot — Google Search Console</span></div>
-      <div class="proof-metric-big">#1 <sub>Rank</sub></div>
-      <div class="proof-desc">PlaylistBridge ranks #1 on Google for core target queries — organic, no paid ads.</div>
-      <div class="proof-source">Source: Google Search Console</div>
+      <div class="proof-img">
+  <img src="images/google-rank.png" alt="Google ranking proof">
+      </div>
+      <div class="proof-metric-big">#1 <sub>Google Rank</sub></div>
+<div class="proof-desc">
+Ranks #1 on Google for "playlistbridge" — fully organic, no ads.
+</div>
+      <div class="proof-source">Source: Google Search</div>
     </div>
 
     <div class="proof-card">
-      <div class="proof-placeholder"><span>Screenshot Slot — Netlify Analytics</span></div>
-      <div class="proof-metric-big">100<sub>+ visitors</sub></div>
-      <div class="proof-desc">100 foreign visitors in the first 10 days post-redesign. Confirmed AI referral traffic from llms.txt.</div>
-      <div class="proof-source">Source: Netlify Analytics</div>
+      <div class="proof-img">
+  <img src="images/traffic-source.png" alt="Traffic sources showing Google organic and AI referrals">
+      </div>
+      <div class="proof-metric-big">200+ <sub>users</sub></div>
+<div class="proof-desc">
+214 users in last 28 days. Majority traffic from Google + AI referrals (ChatGPT, Gemini).
+</div>
+      <div class="proof-source">Source: Google  Analytics</div>
     </div>
 
     <div class="proof-card">
-      <div class="proof-placeholder"><span>Screenshot Slot — Firebase / AdSense</span></div>
-      <div class="proof-metric-big">3<sub> live products</sub></div>
-      <div class="proof-desc">Three independent live products generating real revenue and real users — not demo projects.</div>
-      <div class="proof-source">Source: Firebase / Google AdSense</div>
+      <div class="proof-img">
+  <img src="images/user-growth.png" alt="User growth analytics showing 130 percent increase">
+      </div>
+      <div class="proof-metric-big">+130% <sub>growth</sub></div>
+<div class="proof-desc">
+User growth increased by 130% in last 28 days — driven by SEO + AI referral traffic.
+</div>
+      <div class="proof-source">Source:  Google Search Console</div>
     </div>
   </div>
 
-  <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--stone);line-height:1.7;max-width:560px;">
-    * Screenshot placeholders — replace with your actual Google Search Console, Netlify Analytics, and AdSense screenshots before distributing this brochure.
+  <p style="margin-top:20px;font-size:11px;color:var(--stone);font-family:'IBM Plex Mono',monospace;">
+Results:
+– #1 Google ranking  
+– 200+ users/month  
+– Multi-source traffic (SEO + AI + Social)
   </p>
 </div>
 
