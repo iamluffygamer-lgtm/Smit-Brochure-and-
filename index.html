@@ -863,7 +863,18 @@ body { background: var(--paper); color: var(--ink); font-family: 'IBM Plex Mono'
   .metric { padding-right: 28px; margin-right: 28px; }
   .cover-h1 { font-size: 56px; }
 }
-  
+.proof-img {
+  width: 100%;
+  height: auto; /* 🔥 remove fixed height */
+  margin-bottom: 20px;
+  border: 1px solid var(--rule);
+}
+
+.proof-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* 🔥 no cropping */
+  }  
 </style>
 </head>
 <body>
